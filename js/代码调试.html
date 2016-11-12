@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <script>
+    	var name = prompt("请输入姓名");
+    	var age = prompt("请输入成绩");
+    	age = parseInt(age);
+    	if (age>=60 && age <=65){
+    		alert("同志仍需努力");
+	}else if(age >65 && age <=80){
+		alert("不错");
+	}else if(age>80 && age <=95){
+		if(age==90){
+			alert("您的姓名"+name +"你的成绩"+age);
+		}else{
+			alert("真不错呀");
+		}
+	}else{
+		alert("非人类");
+	}
+    </script>
+    <body>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>表单控件</title>
+        <style>
+        	input {
+        		border-style: none;
+        		outline-style: none;   /* 删除轮廓线 */
+        	}
+        	.username {
+        		border: 1px dashed black;
+        		background-color: silver;
+        	}
+        	.username:focus{
+        		background-color: red;
+        	}
+        	.email {
+        		border-bottom: 1px solid orange;
+        	}
+        	.search {
+        		border: 1px solid black;
+        		background: url('search.png') no-repeat right center;
+        	}
+        </style>
+    </head>
+    <body>
+    	<!-- 用label是表单优化写法 -->
+    	<label for="name">用户名:</label>&nbsp;&nbsp;&nbsp;<input type="text" class="username" id="name">
+    	<br>
+    	<br>
+    	邮箱:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" class="email">
+    	<br>
+    	<br>
+    	搜索一下:&nbsp;&nbsp;<input type="text" class="search">
+    </body>
+</html>

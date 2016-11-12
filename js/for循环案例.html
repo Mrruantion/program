@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script>
+
+        	//计算1到100的和
+        	// var sum = 0;
+        	// for(var i=1;i<=100;i++){
+        	// 	sum += i;
+        	// }
+        	// alert(sum);
+        	
+
+        	// 将1到100之间的所有是6的倍数的数字输出到控制台中
+        	// for(var i=1;i<=100;i++){
+        	// 	if(i%6==0){
+        	// 		console.log(i);
+        	// 	}
+        	// }
+
+
+        	// 在页面中打印两行10颗*
+        	// for(var i=1;i<=2;i++){
+        	// 	// if(i==11){
+        	// 	// 	document.write("<br>")
+        	// 	// }
+        	// 	for(var j=1;j<=10;j++){
+        	// 		document.write("*");
+        	// 	}
+        	// 	document.write("<br>")
+        	// }
+        	
+
+        	// 在页面中打印一个直角三角形
+        	// for(var i=1; i<=9;i++){
+        	// 	for(var j=1 ;j<=i;j++){
+        	// 		document.write("*")
+        	// 	}
+        	// 	document.write("<br>")
+        	// } 
+        	
+        	 // 99乘法表
+        	 // for(var i=1;i<=9;i++){
+        	 // 	for(var j=1;j<=i;j++){
+        	 // 		document.write(j+"*"+i+"="+i*j+" ");
+        	 // 	}
+        	 // 	document.write("<br>")
+        	 // }     
+
+
+        	 // 1到10的质数
+        	 var flag = 0;
+        	 for(var i=1;i<=10;i++){
+        	 	for(var j=2;j<i;j++){
+        	 		if(i%j==0){
+        	 			flag=1;
+        	 			break;
+        	 		}else{
+        	 			flag=0;
+        	 		}
+        	 	}
+        	 	if(flag==0 && i!=1){
+        	 		console.log(i);
+        	 	}
+        	 }
+        </script>	
+    </head>
+    <body>
+    </body>
+</html>

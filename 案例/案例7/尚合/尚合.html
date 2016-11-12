@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>尚合官网</title>
+	<link rel="icon" href="images/icon_0.gif">
+	<style>
+		/* CSS初始化 */
+		body,h1,h2,h3,h4,h5,h6,ul,dl,dt,dd,p{
+			margin: 0;
+			padding: 0;
+		}
+		body,div,p,h1,h2,h3,h4,h5,h6,a,span{
+			font-size: 12px;
+			font-family: 宋体;
+		}
+		a{
+			text-decoration: none;
+		}
+		input{
+			border: 0 none;
+			outline-style: none;
+		}
+		ul {
+			list-style: none;
+		}
+		/* 头部开始 */
+		.header{
+			width: 980px;
+			height: 62px;
+			margin: 0 auto;
+		}
+		.header_logo{
+			width: 179px;
+			height: 39px;
+			float: left;
+			margin-top: 20px;
+		}
+		.header_search {
+			/* height: 30px; */
+			float: right;
+			border: 1px solid #E1E1E1;
+			margin-top: 20px;
+		}
+		.put {
+			width: 165px;
+			height: 28px;
+			float: left;
+		}
+		.submit{
+			float: left;
+			width: 31px;
+			height: 30px;
+			background: url('images/search2.jpg');
+		}
+		/* 头部结束 */
+		/* 导航开始 */
+		.nav {
+			height: 55px;
+			border-top: 1px solid #e1e1e1;
+			background: url('images/nav_bg.png');
+		}
+		.nav ul {
+			/* height: 55px;
+			background: url('images/nav_bg.png');
+			padding-left: 192px; */
+			margin-left: 185px;
+		}
+		.nav li{
+			height: 55px;
+			line-height: 55px;
+			float: left;
+			background: url('images/nav_bg-line.png') no-repeat right top;
+			/* padding: 0 30px; */
+		}
+		.nav a{
+			height: 55px;
+			display: inline-block;
+			margin: 0 46px;
+			color: black;
+			font-weight: 700;
+		}
+		.nav a:hover{
+			color: #7CB609;
+		}
+		/* 导航结束 */
+		/* banner开始 */
+		.banner {
+			width: 980px;
+			height: 597px;
+			margin: 0 auto;
+		}
+
+		/* banner结束 */
+
+		/* 公告开始 */
+		.gg {
+			height: 29px;
+			/* padding: 0 192px; */
+			border-bottom: 1px solid #e1e1e1;
+			border-top: 1px solid #e1e1e1;
+			margin-bottom: 10px;
+			background-color: #FBFBFB;
+
+		}
+		.gg-body{
+			width: 980px;
+		  	height: 29px;
+		  	margin: 0 auto;
+		}
+		.g-l {
+			height: 29px;
+			line-height: 29px;
+			float: left;
+			/* margin-top: 20px; */
+		}
+		.g-r{
+			float: right;
+			margin-top: 6px;
+		}
+		/* 公告结束 */
+
+		/* 产品展示开始 */
+		.products {
+			width: 980px;
+			margin: 0 auto;
+			margin-bottom: 20px;
+			/* position: relative; */
+		}
+		.public {
+			/* position: absolute; */
+			/* left: 0; */
+			/* top: 10px; */
+			/* vertical-align: middle; */
+			margin-top: 12px;
+			color: #7AB800;
+			margin-left: 6px;
+		}
+		.public img {
+			vertical-align: middle;
+		}
+		
+		/* 左边盒子 */
+		.p-l{
+			width: 310px;
+			height: 224px;
+			border: 1px solid silver;
+			float: left;
+
+			position: relative;
+		}
+		.picture{
+		  	  width: 205px;
+		  	  height: 149px;
+		  	  position: absolute;
+		  	  left:44px;
+		  	  top: 50px;
+		  }
+
+		  .l-sj{
+		  	  position: absolute;
+		  	  left: 48px;
+		  	  top:120px;
+		  }
+		  .r-sj{
+		  	  position: absolute;
+		  	  right: 60px;
+		  	  top:120px;
+		  }
+
+		  /* 中间盒子 */
+		.p-m {
+			width: 373px;
+			height: 224px;
+			border: 1px solid #E4E4E4;
+			float: left;
+			margin-left: 12px;
+		}
+
+		.p-m ul {
+			margin-top: 10px;
+			margin-left: 23px;
+			margin-right: 18px;
+		}
+		
+		.p-m li {
+			height: 27px;
+			line-height: 27px;
+			border-bottom: 1px dashed #DCDCDC; 
+		}
+		.p-m a {
+			color: #666666;
+		}
+		a.ys {
+			color: red;
+			font-weight: 700;
+		}
+		.p-m a:hover {
+			color: #7AB800;
+		}
+		
+
+		/* 右边盒子 */
+		.p-r{
+			width: 268px;
+			height: 224px;
+			border: 1px solid #E4E4E4;
+			float: right
+		}
+	
+		.p-r ul {
+			margin-top: 38px;
+			margin-left: 24px;
+		}
+		.p-r li {
+			/* height: 12px;
+			line-height: 12px; */
+			border-left: 3px solid green;
+			padding-left: 3px;
+			margin-bottom: 3px;
+		}
+		.p-r p {
+			margin-left: 30px;
+			margin-top: 50px;
+		}
+		
+		/* 清除浮动 */
+		.clearfix:after{
+			content: "";
+			height: 0;
+			line-height: 0;
+			display: block;
+			clear: both;
+			visibility: hidden;
+		}
+		.clearfix{
+			 zoom: 1;   /* 兼容IE */
+		}
+		/* 产品展示结束 */
+
+		/* 尾部开始	 */
+		.footer{
+			height: 302px;
+			background-color: #2D2D2D;
+			/* padding-left: 120px; */
+			/* border-bottom: 1px dashed silver; */
+			/* overflow: hidden; */
+
+
+		}
+		.footer-min {
+			/* float: left; */
+			width: 980px;
+			height: 220px;
+			margin: 0 auto;
+			/* margin-top: 10px; */
+
+		}
+		.footer-min dl {
+			float: left;
+			/* display: inline-block; */
+			margin-right: 30px;
+			margin-top: 20px;
+		}
+
+		dt {
+			color: #C7C7C7;
+		}
+
+		dd{
+      		
+      		 color:  #707070;
+      		 margin-top: 10px;
+      	}
+
+		.ft-nv {
+			background-color: #2D2D2D;
+			height: 82px;
+			border-top: 2px dashed #414141;
+			text-align: center;
+		}
+		.ft-nv p {
+			margin-top: 20px;
+		}
+		/* 尾部结束 */
+	</style>
+</head>
+<body>
+	<div class="box">
+		<!-- 头部开始 -->
+		<div class="header">
+			<div class="header_logo">
+				<img src="images/logo.jpg" alt="">
+			</div>
+			<div class="header_search">
+				<input type="text" class="put">
+				<input type="button" class="submit">
+			</div>
+		</div>
+		<!-- 头部结束 -->
+		<!-- 导航开始 -->
+		<div class="nav">
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">智能手机</a></li>
+				<li><a href="#">平板电脑</a></li>
+				<li><a href="#">配件</a></li>
+			</ul>
+		</div>
+		<!-- 导航结束 -->
+		<!-- banner开始 -->
+		<div class="banner">
+			<img src="images/banner.jpg" alt="">
+		</div>
+		<!-- banner结束 -->
+
+		<!-- 公告开始 -->
+		<div class="gg">
+			<div class="gg-body">
+				<div class="g-l">
+					<p>最新公告：尚合Aone智能手机入网证已获取工信部门审批下发。尚合官网</p>
+				</div>
+				<div class="g-r">
+					<img src="images/weibo.png" alt="">
+					<img src="images/xinlang.png" alt="">
+					<img src="images/renren.png" alt="">
+					<img src="images/zone.png" alt="">
+				</div>
+			</div>
+		</div>
+		<!-- 公告结束 -->
+		<!-- 产品展示开始 -->
+		<div class="products clearfix">
+			<div class="p-l">
+				<div class="public">
+					<img src="images/o.jpg" alt="">
+					<span>新品发布</span>
+				</div>
+				 <!-- 商品展示 -->
+				 	 <div class="picture">
+				 	 	 <img src="images/home_hot_01.png">
+				 	 </div>
+
+				 	 <!-- 按钮 -->
+
+				 	  <div class="l-sj">
+				 	  	
+				 	  	  <img src="images/left.png">
+				 	  </div>
+
+				 	  <div class="r-sj">
+				 	  	 <img src="images/right.png">
+				 	  </div>
+			</div>
+			<div class="p-m">
+				<div class="public">
+					<img src="images/o.jpg" alt="">
+					<span>新闻中心</span>
+				</div>
+				<ul>
+					<li><a href="#" class="ys">致歉公告</a></li>
+					<li><a href="#">首批尚合Aonet已全部售馨!</a></li>
+					<li><a href="#">【媒体报导】国产高性价比 尚合Aonet四核手机评测</a></li>
+					<li><a href="#">我司产品已经通过了国家强制性产品3C认证</a></li>
+					<li><a href="#">尚合Aone智能手机入网证已经获工信部门审批下发.</a></li>
+					<li><a href="#">我司通过ISO9001:2008国际质量管理体系认证</a></li>	
+				</ul>	
+			</div>
+			<div class="p-r">
+				<div class="public">
+					<img src="images/o.jpg" alt="">
+					<span>技术与支持</span>	
+				</div>
+				<ul>
+					<li>售后服务</li>
+					<li>投诉与建议</li>
+					<li>联保网点</li>
+					<li>常见问题FAQ</li>
+				</ul>
+				<p>深圳市汇聚众合科技发展有限公司 服务热线：400-633-7922</p>
+			</div>
+		</div>
+		<!-- 产品展示结束 -->
+		<!-- 尾部开始 -->
+		<div class="footer">
+			<div class="footer-min">
+				<dl>
+					<dt>尚合首页</dt>
+					<dd>返回首页</dd>
+				</dl>
+				<dl>
+					<dt>智能手机</dt>
+					<dd>返回首页</dd>
+				</dl>
+				<dl>
+					<dt>平板电脑</dt>
+					<dd>返回首页</dd>
+				</dl>
+				<dl>
+					<dt>尚合首页</dt>
+					<dd>返回首页</dd>
+				</dl>
+			</div>
+			<div class="ft-nv">
+				 <p>
+	     	 	  	深圳市会居中和优先公司深圳市会居中和优先公司深圳市会居中和优先公司深圳市会居中和优先公司深圳市会居中和优先
+		     	 </p>
+		     	 <p>
+	     	 	  	公司深圳市会居中和优先公司
+		     	 </p>
+			</div>	
+		</div>
+		<!-- 尾部结束 -->
+		
+	</div>
+</body>
+</html>

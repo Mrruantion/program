@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>helloworld</title>
+</head>
+<body>
+	<div>
+		<p id="jj"></p>
+	</div>
+	<script>
+		function demo(a,b,c){
+			if(a>b){
+				if(a>c){
+					return a;
+				}else{
+					return c;
+				}
+			}else{
+				if(b>c){
+					return b;
+				}else{
+					return c;
+				}
+			}
+		}
+		document.getElementById("jj").innerHTML=demo(4,5,3);
+	</script>
+</body>
+</html>

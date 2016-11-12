@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+    	<script>
+    		var str = "14 hello world 3 4"
+    		function nimabi(str){
+    			var sum=0;
+    			var pattern = new Array();
+    			pattern = str.split(" ");
+    			alert(parseInt(pattern[1]));
+    			for(var i=0;i<pattern.length;i++){
+    				if(isNaN(parseInt(pattern[i]))){
+    					continue;
+    				}else{
+    					sum=sum+parseInt(pattern[i]);
+    				}
+    			}
+    		 alert(sum);
+    		}
+    		nimabi(str);
+    	</script>
+    </body>
+</html>
